@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
+
+    [SerializeField] ShootSE SE;         //‰¹
+
     public void OnClick()
     {
-        SceneManager.LoadScene("GameScene");
+        SE.PlaySE();
+        //SceneManager.LoadScene("GameScene");
     }
 }
