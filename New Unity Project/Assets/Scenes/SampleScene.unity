@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 430286216}
   - component: {fileID: 430286215}
   - component: {fileID: 430286214}
+  - component: {fileID: 430286217}
   m_Layer: 0
   m_Name: "\u3042\u3089\u304F\u308C_\u5973\u6027"
   m_TagString: GIRL
@@ -232,6 +233,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &430286217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430286213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e594312d8d70e4289e63cc0d478f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &479309599
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +271,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 479309599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57d4a466978859e419fc82766afa1536, type: 3}
+  m_Script: {fileID: 11500000, guid: 8659775de33a26e40a051a81e47086b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &479309601
@@ -386,10 +399,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 879229907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e26f901e334b4e49b42693287d59b9b, type: 3}
+  m_Script: {fileID: 11500000, guid: b0c766c89c9290243bc0b078fdb98220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 6078347730715001138, guid: e739e43c28ccce843b9699dfbb4b831c, type: 3}
+  arrow: {fileID: 6078347730715001138, guid: 29d2da5144b28a046ac7d082ceb4be0d, type: 3}
   RotateArrow: {fileID: 479309600}
 --- !u!212 &879229909
 SpriteRenderer:
@@ -549,6 +562,7 @@ GameObject:
   - component: {fileID: 1809608192}
   - component: {fileID: 1809608191}
   - component: {fileID: 1809608190}
+  - component: {fileID: 1809608193}
   m_Layer: 0
   m_Name: "\u3042\u3089\u304F\u308C_\u7537\u6027"
   m_TagString: BOY
@@ -647,3 +661,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1809608193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809608189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e594312d8d70e4289e63cc0d478f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
