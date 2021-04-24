@@ -16,8 +16,6 @@ public class people : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         isAppeared = false;
-
-        transform.position = Vector3.zero;
     }
 
     // Update is called once per frame
@@ -61,6 +59,7 @@ public class people : MonoBehaviour
         if (goRright)
         {
             transform.Translate(-11.0f, 0.0f, 0.0f);
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1.0f);
         }
         else
         {
