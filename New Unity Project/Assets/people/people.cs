@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,17 +11,25 @@ public class people : MonoBehaviour
     float speed;        //移動速度
 
     bool isAppeared;   //一度画面に出現したか
+    bool isStop;
 
     // Start is called before the first frame update
     void Start()
     {
         renderer = GetComponent<Renderer>();
         isAppeared = false;
+        isStop = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //ストップフラグが入っていたら何もしない
+        if (isStop)
+        {
+            return;
+        }
+
         //移動処理
         if (goRright)
         {
@@ -71,5 +80,17 @@ public class people : MonoBehaviour
     public void SetPosY(float y)
     {
         transform.Translate(0.0f, y, 0.0f);
+    }
+
+    //速度をゼロにする
+    public void StopPeople()
+    {
+        isStop = true;
+    }
+
+    //歩くのを再開する
+    public void RestartPeople()
+    {
+        isStop = false;
     }
 }
