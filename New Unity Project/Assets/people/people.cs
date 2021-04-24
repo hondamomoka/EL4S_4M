@@ -16,6 +16,8 @@ public class people : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         isAppeared = false;
+
+        transform.position = Vector3.zero;
     }
 
     // Update is called once per frame
@@ -47,14 +49,28 @@ public class people : MonoBehaviour
     }
 
     //人の歩くスピード
-    void SetSpeed(float s)
+    public void SetSpeed(float s)
     {
         speed = s;
     }
 
     //右から左に行くならtrue
-    void SetGoRight(bool gr)
+    public void SetGoRight(bool gr)
     {
         goRright = gr;
+        if (goRright)
+        {
+            transform.Translate(-11.0f, 0.0f, 0.0f);
+        }
+        else
+        {
+            transform.Translate(11.0f, 0.0f, 0.0f);
+        }
+    }
+
+    //出現y座標
+    public void SetPosY(float y)
+    {
+        transform.Translate(0.0f, y, 0.0f);
     }
 }
