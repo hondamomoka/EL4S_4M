@@ -59,7 +59,7 @@ public class Cupid : MonoBehaviour
             rot = -75;
         }
 
-        Debug.Log(rot);
+        //Debug.Log(rot);
 
         RotateArrow.SetRotate(rot);
 
