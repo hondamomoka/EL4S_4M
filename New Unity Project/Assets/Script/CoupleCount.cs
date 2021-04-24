@@ -24,11 +24,15 @@ public class CoupleCount : MonoBehaviour
     void Update()
     {
         coupleText.text= coupleCount.ToString();
+
     }
 
     //カップルを足す関数（プレイヤーが２人射貫いた時に呼び出してね！）
     public void CouplePlus()
     {
        coupleCount +=1;
+       this.gameObject.transform.Translate (0, 0.1f, 0);
 	}
+
+
 }

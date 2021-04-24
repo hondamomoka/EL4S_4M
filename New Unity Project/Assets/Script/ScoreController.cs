@@ -31,5 +31,7 @@ public class ScoreController : MonoBehaviour
     {
       if(isNormal == true) score += 300;
       else score += 100;
+
+      
 	}
 }
